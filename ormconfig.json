@@ -1,0 +1,16 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "seopjikoji",
+  "password": "041603",
+  "database": "seopjikoji",
+  "entities": ["./dist/domain/**/*.entity.js"],
+  "migrations": ["./dist/infra/database/migration/*.js"],
+  "cli": {
+    "entitiesDir": "./dist/domain/**/*.entity.js",
+    "migrationsDir": "./src/infra/database/migration"
+  },
+  "migrationsTableName": "migrations_test",
+  "synchronize": false
+}
